@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Only One Living Start Here</title>
+    <meta name="description" content="Start here page for Only One Living sharing how to begin a low toxin lifestyle.">
+    <meta name="keywords" content="start here, low toxin, clean living, simple guide">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="top-bar">
+            <p class="top-bar-text">You can start from where you are right now</p>
+        </div>
+        <div class="main-bar">
+            <div class="logo">
+                <div class="logo-mark">O</div>
+                <div class="logo-text">
+                    <h1>Only One Living</h1>
+                    <p class="tagline">Practical green living</p>
+                </div>
+            </div>
+            <nav>
+                <button class="nav-toggle" aria-label="Toggle navigation">
+                    ☰
+                </button>
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="guide.html" class="active">Start here</a></li>
+                    <li><a href="swap-table.html">Product swaps</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <p class="page-kicker">Beginner path</p>
+            <h2>How to begin a low toxin life without feeling lost</h2>
+            <p>
+                This start here page gives you three simple focus areas. You can move through them in order
+                or pick the one that feels most urgent in your own world.
+            </p>
+        </section>
+
+        <section class="flex-two">
+            <article class="card">
+                <h3>Step one look around your main space</h3>
+                <p>
+                    Pick the room you use the most. Clear flat surfaces of items that you do not need every day.
+                    Wipe them with a mild cleaner and open windows when it is safe and the weather allows.
+                </p>
+                <p>
+                    Notice how the room feels after even a small reset. This shows you that you do not have to
+                    buy a long list of items to start living in a lighter space.
+                </p>
+            </article>
+            <article class="card">
+                <h3>Step two notice what touches your skin daily</h3>
+                <p>
+                    Take a quiet moment and gather the items you use on your body each day. Read the labels.
+                    Even if you do not understand every word you can begin to notice which ones feel long and heavy.
+                </p>
+                <p>
+                    When one of these products runs out replace it with a version that lists short clear parts
+                    and a softer scent. Over time your shelf shifts toward a calmer mix.
+                </p>
+            </article>
+        </section>
+
+        <section class="highlight-box">
+            <h3>Design note</h3>
+            <p>
+                This page is written like a welcome post on a real blog. The layout uses two feature cards and a
+                highlight section so that first time visitors can see what to do next in one quick scan.
+            </p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-main">
+            <div>
+                <p class="footer-title">Only One Living</p>
+                <p class="footer-text">
+                    A clear start here page that anchors the full site and mirrors what you see on real clean living blogs.
+                </p>
+            </div>
+            <div>
+                <p class="footer-label">Contact</p>
+                <p class="footer-text">
+                    Email:
+                    <a href="mailto:hello@onlyoneliving.com">hello at only one living dot com</a>
+                </p>
+            </div>
+        </div>
+        <p class="footer-copy">&copy; 2025 Only One Living. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const navToggle = document.querySelector(".nav-toggle");
+        const navList = document.querySelector(".nav-list");
+
+        if (navToggle && navList) {
+            navToggle.addEventListener("click", () => {
+                navList.classList.toggle("nav-open");
+            });
+        }
+    </script>
+</body>
+</html>

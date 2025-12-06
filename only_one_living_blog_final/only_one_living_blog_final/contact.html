@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Only One Living Contact</title>
+    <meta name="description" content="Contact form for the Only One Living green living blog style site.">
+    <meta name="keywords" content="contact, form, green living, clean lifestyle blog">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="top-bar">
+            <p class="top-bar-text">Reach out with questions or ideas for future posts</p>
+        </div>
+        <div class="main-bar">
+            <div class="logo">
+                <div class="logo-mark">O</div>
+                <div class="logo-text">
+                    <h1>Only One Living</h1>
+                    <p class="tagline">Community and support</p>
+                </div>
+            </div>
+            <nav>
+                <button class="nav-toggle" aria-label="Toggle navigation">
+                    ☰
+                </button>
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="guide.html">Start here</a></li>
+                    <li><a href="swap-table.html">Product swaps</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <p class="page-kicker">Contact</p>
+            <h2>Send a note to Only One Living</h2>
+            <p>
+                This page includes a full form with four fields plus a clear submit button. For this course
+                project the form does not send real data but it shows that you can build a modern layout.
+            </p>
+        </section>
+
+        <section class="form-section card">
+            <form action="#" method="post">
+                <div class="form-row">
+                    <label for="name">Full name</label>
+                    <input type="text" id="name" name="fullName" required>
+                </div>
+
+                <div class="form-row">
+                    <label for="email">Email address</label>
+                    <input type="email" id="email" name="emailAddress" required>
+                </div>
+
+                <div class="form-row">
+                    <label for="topic">Main topic</label>
+                    <select id="topic" name="mainTopic">
+                        <option value="home">Home air and surfaces</option>
+                        <option value="body">Body and hair care</option>
+                        <option value="food">Pantry and kitchen</option>
+                        <option value="mind">Daily routine and mindset</option>
+                    </select>
+                </div>
+
+                <div class="form-row">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="messageText" rows="4"></textarea>
+                </div>
+
+                <div class="form-row">
+                    <button type="submit">Send your note</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="contact-extra">
+            <p>
+                You can also email directly at
+                <a href="mailto:hello@onlyoneliving.com">hello at only one living dot com</a>.
+                For outside learning about indoor air you can visit
+                <a href="https://www.epa.gov/indoor-air-quality-iaq" target="_blank" rel="noopener">
+                    a national page about indoor air quality
+                </a> to see examples of formal health guides on the web.
+            </p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-main">
+            <div>
+                <p class="footer-title">Only One Living</p>
+                <p class="footer-text">
+                    A blog style site that meets course rules but is ready for a real brand future.
+                </p>
+            </div>
+            <div>
+                <p class="footer-label">Contact</p>
+                <p class="footer-text">
+                    Email:
+                    <a href="mailto:hello@onlyoneliving.com">hello at only one living dot com</a>
+                </p>
+            </div>
+        </div>
+        <p class="footer-copy">&copy; 2025 Only One Living. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const navToggle = document.querySelector(".nav-toggle");
+        const navList = document.querySelector(".nav-list");
+
+        if (navToggle && navList) {
+            navToggle.addEventListener("click", () => {
+                navList.classList.toggle("nav-open");
+            });
+        }
+    </script>
+</body>
+</html>
